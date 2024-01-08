@@ -6,7 +6,7 @@
 /*   By: yabejani <yabejani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 12:30:15 by yabejani          #+#    #+#             */
-/*   Updated: 2024/01/08 16:12:30 by yabejani         ###   ########.fr       */
+/*   Updated: 2024/01/08 16:39:06 by yabejani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ char	*ft_clean_save(char *save)
 
 char	*get_next_line(int fd)
 {
-	static char	*save[4095];
+	static char	*save[4096];
 	char		*line;
 
 	line = NULL;
