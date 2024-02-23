@@ -6,7 +6,7 @@
 /*   By: yabejani <yabejani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 16:16:42 by yabejani          #+#    #+#             */
-/*   Updated: 2024/01/03 17:20:27 by yabejani         ###   ########.fr       */
+/*   Updated: 2024/01/23 16:03:15 by yabejani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s + i);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

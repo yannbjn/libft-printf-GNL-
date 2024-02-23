@@ -6,7 +6,7 @@
 /*   By: yabejani <yabejani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:42:39 by yabejani          #+#    #+#             */
-/*   Updated: 2024/01/08 16:33:43 by yabejani         ###   ########.fr       */
+/*   Updated: 2024/02/21 14:19:10 by yabejani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <string.h>
+# include <stdarg.h>
 # include <stdio.h>
 # include <unistd.h>
+# include <stdbool.h>
+# include <fcntl.h>
 
 //libft
 int		ft_atoi(const char *nptr);
@@ -81,7 +84,7 @@ int		ft_print_p(void *ptr);
 int		ft_print_xx(unsigned int nbr, int flag);
 int		ft_printf(const char *form, ...);
 
-//GNL
+//GNL heap
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -91,7 +94,7 @@ char	*ft_strjoinfree(char *s1, char *s2);
 char	*ft_strchrgnl(char *str, int c);
 char	*ft_strndup(char *str, int n);
 
-char	*get_next_line(int fd);
+char	*ft_get_next_line(int fd);
 char	*ft_get_line(char *save);
 char	*ft_clean_save(char *save);
 char	*ft_read(int fd, char *save);

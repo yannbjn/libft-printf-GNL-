@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabejani <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yabejani <yabejani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 18:20:33 by yabejani          #+#    #+#             */
-/*   Updated: 2023/11/13 16:50:10 by yabejani         ###   ########.fr       */
+/*   Updated: 2024/01/18 16:23:16 by yabejani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
 	printf("%p\n", ft_memcpy(((void*)0), ((void*)0), 3));
 	printf("%p\n", memcpy(((void*)0), ((void*)0), 3));
-}*/
+} */

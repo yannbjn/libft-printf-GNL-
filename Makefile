@@ -1,6 +1,6 @@
 NAME		= libft.a 
 CC			= cc
-CFLAGS		= -Wall -Wextra -Werror -O3 -g3 -I../include
+CFLAGS		= -Wall -Wextra -Werror -I../include
 LIB			= ar -rcs
 SRCS		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -12,25 +12,26 @@ SRCS		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 			ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 			ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
 			ft_lstclear.c ft_lstiter.c ft_lstmap.c \
-			get_next_line_bonus.c get_next_line_utils_bonus.c ft_printf.c \
-			ft_print_di.c ft_print_p.c ft_print_s.c ft_print_u.c \
-			ft_print_xx.c
+			get_next_line_bonus.c get_next_line_utils_bonus.c \
+			ft_joinfree.c \
+			ft_printf.c ft_print_di.c ft_print_p.c ft_print_s.c ft_print_u.c \
+			ft_print_xx.c 
 
 OBJS		= $(SRCS:.c=.o)
 
 all: 		$(NAME)
 
 $(NAME):	$(OBJS)
-			$(LIB)	$(NAME) $(OBJS)
+			@$(LIB)	$(NAME) $(OBJS)
 
 .c.o: 		
-			$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+			@$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
 clean:
-	rm -f $(OBJS)
+	@rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
